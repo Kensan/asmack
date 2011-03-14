@@ -1,6 +1,21 @@
---- org/jivesoftware/smackx/pubsub/util/XmlUtils.java
-+++ org/jivesoftware/smackx/pubsub/util/XmlUtils.java
-@@ -28,32 +28,6 @@ import javax.xml.transform.stream.StreamSource;
+--- org.orig//jivesoftware/smackx/pubsub/util/XmlUtils.java	2011-03-14 11:46:56.466503191 +0100
++++ org/jivesoftware/smackx/pubsub/util/XmlUtils.java	2011-03-14 11:48:18.535044098 +0100
+@@ -13,14 +13,6 @@
+  */
+ package org.jivesoftware.smackx.pubsub.util;
+ 
+-import java.io.StringReader;
+-
+-import javax.xml.transform.OutputKeys;
+-import javax.xml.transform.Transformer;
+-import javax.xml.transform.TransformerFactory;
+-import javax.xml.transform.stream.StreamResult;
+-import javax.xml.transform.stream.StreamSource;
+-
+ /**
+  * Simple utility for pretty printing xml.
+  * 
+@@ -28,32 +20,6 @@
   */
  public class XmlUtils
  {
