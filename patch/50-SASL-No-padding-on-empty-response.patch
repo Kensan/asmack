@@ -1,0 +1,16 @@
+--- org.orig//jivesoftware/smack/sasl/SASLMechanism.java	2011-03-14 11:46:56.426503835 +0100
++++ org/jivesoftware/smack/sasl/SASLMechanism.java	2011-03-14 11:57:05.898706360 +0100
+@@ -260,12 +260,9 @@
+         public String toXML() {
+             StringBuilder stanza = new StringBuilder();
+             stanza.append("<response xmlns=\"urn:ietf:params:xml:ns:xmpp-sasl\">");
+-            if (authenticationText != null) {
++            if (authenticationText != null && authenticationText.trim().length() > 0) {
+                 stanza.append(authenticationText);
+             }
+-            else {
+-                stanza.append("=");
+-            }
+             stanza.append("</response>");
+             return stanza.toString();
+         }
